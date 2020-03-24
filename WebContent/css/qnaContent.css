@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#qnaContent_wrap{
+	height:1200px;
+	position:relative;
+	left:0px;
+	top:200px;
+}
+
+#qnaContent{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);		
+}
+
+.right{
+	float:right;
+}
+ 
+a:hover{
+	color:black;
+	border-bottom:1px solid black;
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+}
+
+th, td{
+	font-size: 0.8em;
+	margin:0;
+	padding:10px;
+	
+}
+
+th{
+	width:150px;
+	text-align: center;
+}
+
+td{
+	width:1050px;
+}
+
+#qnaContent .id, #qnaContent .hit{
+	width:100px;
+	text-align:center;
+}
+
+#qnaContent .title{
+	width:500px;
+	text-align:center;
+}
+
+#qnaContent .writer, #qnaContent .ip, #qnaContent .date{
+	width:200px;
+	text-align:center;
+}
+
+#qnaContent .content{
+	padding:15px;
+}
+
+#qnaContent th, #qnaContent td{
+	border-top:1px solid lightgrey;
+	padding: 15px 0;
+}
+
+#file .fileName{
+	width:100px;
+	text-align:center;
+	border-right:1px solid lightgrey;
+}
+
+#file table{
+	margin-top:15px;
+}
+
+#file .fileName{
+	width:200px;
+	text-align:center;
+	border-right:1px solid lightgrey;
+}
+
+#file .file{
+	width:1000px;
+	padding-left:15px;
+}
+
+#file td{
+	border-top:1px solid lightgrey;
+	padding: 15px 0;
+}
+
+.colspan{
+	border:0;
+	text-align:center;
+}
+
+.btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:10px 0;
+	margin: 10px;
+}
+
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}

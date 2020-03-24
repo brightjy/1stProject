@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+#qnaList_wrap{
+	height:800px;
+	position:relative;
+}
+
+#qnaList{
+	position:absolute;
+	width:800px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);		
+}
+
+table{
+	width:800px;
+}
+
+th{
+	padding-bottom:20px;
+}
+
+.paging{
+	text-align:center;
+	font-size:0.7em;
+}
+
+td{
+	text-align:center;
+	font-size:0.8em;
+	padding: 10px 0 10px 0;
+}
+
+
+.left{
+	text-align:left;
+}

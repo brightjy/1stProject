@@ -1,0 +1,19 @@
+SELECT*FROM WISHLIST;
+DROP TABLE WISHLIST;
+
+-- 위시리스트에 상품 추가
+INSERT INTO WISHLIST (wID, pID, mID) VALUES (WISHLIST_SEQ.NEXTVAL, '7', 'barkji0'); 
+
+-- 회원의 위시리스트에 있는 상품 리스트 가져오기(mID, startRow, endRow)
+--- 가져오고 싶은 값 : pNAME, pIMAGE1, pPRICE, 
+SELECT pNAME, pIMAGE1, pPRICE, W.* FROM WISHLIST W, PRODUCT P WHERE W.pID=P.pID AND mID='barkji0' ORDER BY wDATE DESC;
+SELECT*FROM(SELECT ROWNUM RN, A.* FROM
+    (SELECT pNAME, pIMAGE1, pPRICE, W.* FROM WISHLIST W, PRODUCT P 
+        WHERE W.pID=P.pID AND mID='barkji0' ORDER BY wDATE DESC)A) 
+            WHERE RN BETWEEN 1 AND 4;
+            
+-- 회원 위시리스트 총 개수 가져오기
+SELECT COUNT(*) TOTCNT FROM WISHLIST W, PRODUCT P WHERE W.pID=P.pID AND mID='barkji0';
+
+-- 위시리스트에서 삭제
+DELETE WISHLIST WHERE mID='barkji0' AND pID='1';

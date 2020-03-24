@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#reviewContent_wrap{
+	height:1200px;
+	position:relative;
+	top:200px;
+}
+
+#reviewContent{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);	
+}
+
+.productImg img{
+	width: 95px;
+	height:95px;
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+}
+
+#product table{
+    border:1px solid lightgrey;
+}
+
+th, td{
+	font-size: 0.8em;
+	margin:0;
+	padding:10px 10px;
+	
+}
+
+th{
+	width:150px;
+	text-align: center;
+}
+
+td{
+	width:1050px;
+}
+
+.btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:10px 0;
+	color:black;
+	margin-left: 30px;
+}
+
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+}
+
+#review table{
+	margin-top:30px;
+}
+
+#review .id, #review .hit{
+	width:100px;
+	text-align:center;
+}
+
+#review .title{
+	width:500px;
+	text-align:center;
+}
+
+#review .writer, #review .ip, #review .date{
+	width:200px;
+	text-align:center;
+}
+
+#review .content{
+	padding:15px;
+}
+
+#review th, #review td{
+	border-top:1px solid lightgrey;
+	padding: 15px 0;
+}
+
+#file table{
+	margin:0;
+}
+
+#file .fileName{
+	width:200px;
+	text-align:center;
+	border-right:1px solid lightgrey;
+}
+
+#file .file{
+	width:1000px;
+	padding-left:15px;
+	text-align:left;
+}
+
+#file td{
+	border-top:1px solid lightgrey;
+	padding: 15px 0;
+}
+
+#file .btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:10px 0;
+	color:black;
+	margin: 10px;
+}
+
+#file .btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+}
+
+.colspan{
+	text-align:center;
+}

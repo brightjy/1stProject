@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#productInsert_wrap{
+	height:1200px;
+	position:relative;
+	top:200px;
+}
+
+#productInsert{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+    width:1200px;
+    
+}
+
+td{
+	padding:15px 0px 15px 10px;
+	border-top:1px solid lightgrey;
+	font-size:0.8em;
+}
+
+
+.title{
+	width:200px;
+	padding:15px 0px 15px 10px;
+	border-right:1px solid lightgrey;
+}
+
+.content{
+	width:50%;	
+	outline:0;
+	border:0;
+	font-size:0.8em;
+}
+
+#pContent{
+	width:100%;
+	height:300px;
+	outline:0;
+	border:1px solid lightgrey;
+	lineheight:300px;
+	padding: 10px
+}
+
+#pPrice, #pDiscount, #pStock{
+	width:50px;
+	border:1px solid lightgrey;
+	padding:5px;
+}
+
+.colspan{
+	text-align:center;
+	border:0;
+}
+
+.btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:10px 0;
+	margin: 10px;
+}
+
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}

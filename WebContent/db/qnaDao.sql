@@ -1,0 +1,47 @@
+
+-- 글 목록(startRow, endRow)
+--- 정렬 기준 (최신글 순, 원글-답글 순)
+SELECT*FROM QNA_BOARD ORDER BY qGROUP DESC, qSTEP;
+SELECT*FROM(SELECT ROWNUM RN, A.* FROM (SELECT*FROM QNA_BOARD ORDER BY qGROUP DESC, qSTEP)A) WHERE RN BETWEEN 3 AND 10;
+
+-- 내가 쓴 글 목록
+SELECT*FROM(SELECT ROWNUM RN, A.* FROM (SELECT*FROM QNA_BOARD ORDER BY qGROUP DESC, qSTEP)A) WHERE MID='aaa' AND RN BETWEEN 3 AND 10;
+
+-- 전체 글 개수
+SELECT COUNT(*) TOTCNT FROM QNA_BOARD;
+
+-- 내가 쓴 글 전체 개수
+SELECT COUNT(*) TOTCNT FROM QNA_BOARD WHERE MID='aaa';
+
+-- 원글 쓰기
+INSERT INTO QNA_BOARD (qID, qCATEGORY, mID, aID, qPW, qTITLE, qCONTENT, qFILE1, qFILE2, qGROUP, qSTEP, qINDENT, qIP)
+    VALUES (QNA_SEQ.NEXTVAL, '기타문의', 'aaa', NULL, '111', '제목', '내용', NULL, NULL, QNA_SEQ.CURRVAL, 0, 0, '111.111.11.11');
+
+-- qId 글 조회수 1 올리기
+UPDATE QNA_BOARD
+    SET qHIT = qHIT+1
+    WHERE qID='1';
+
+-- 상세글 보기 qId로 글 dto 가져오기
+SELECT Q.*, pIMAGE1, pNAME  FROM QNA_BOARD Q, PRODUCT P WHERE Q.pID=P.pID AND qID='1';
+
+-- 답변 글 쓰기 전 stepA
+UPDATE QNA_BOARD SET QSTEP=QSTEP+1 WHERE QGROUP=1 AND QSTEP>0;
+
+-- 답변 글 쓰기
+INSERT INTO QNA_BOARD (qID, qCATEGORY, mID, aID, qPW, qTITLE, qCONTENT, qFILE1, qFILE2, qGROUP, qSTEP, qINDENT, qIP)
+    VALUES (QNA_SEQ.NEXTVAL, '상품문의', NULL, 'admin', '111', '답변제목', '답변내용', NULL, NULL, 2, 0+1, 0+1, '111.111.11.11'); 
+
+-- 글 수정하기
+UPDATE QNA_BOARD 
+    SET qTITLE = '제목 수정',
+        qCONTENT = '내용 수정',
+        qFILE1 = '파일수정',
+        qFILE2 = '파일수정',
+        qIP = '222.222.22.22'
+    WHERE qID='2' AND qPW='111';    
+
+-- 글 삭제하기
+DELETE QNA_BOARD WHERE qID='1' AND qPW='111';
+
+COMMIT;

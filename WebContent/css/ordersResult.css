@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#ordersResult_wrap{
+	height:1700px;
+	position:relative;
+	top:200px;
+}
+
+#ordersResult{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);	
+}
+
+input{
+	outline:0;
+	border:0;
+	border-bottom:1px solid lightgrey;
+}
+
+.subject{
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:100px;
+}
+
+span{
+	padding-bottom:10px;
+	border-bottom:2px solid lightgrey;
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+    margin-bottom:50px;
+    width:1200px;
+}
+
+.firstrow{
+	padding:10px;
+	border-bottom:2px solid black;
+	font-size:0.95em;
+	font-weight:bold;
+}
+
+
+.firstrow span{
+	color:lightgrey;
+	border:0;
+}
+
+td{
+	font-size: 0.8em;
+ 	border-top:1px solid lightgrey;
+	padding: 10px;
+}
+
+#img{
+	width:200px;
+}
+
+img{
+	width:100px;
+}
+
+.btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:5px 20px;
+	text-align:center;
+	margin:5px;
+}
+
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}
+
+#oDate, #oId, #img, #pPrice, #pAmount, #odTotsum, #reviewWrite{
+	width:100px;
+}
+
+#pName{
+	
+}
+
+.title{
+	width:300px;
+}
+
+#lastbtn{
+	padding: 10px 20px;
+}
+
+.lastrow{
+	text-align:center;
+	border:0;
+}

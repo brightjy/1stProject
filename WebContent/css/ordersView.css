@@ -1,0 +1,169 @@
+@charset "UTF-8";
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#ordersView_wrap{
+	height:1700px;
+	position:relative;
+	top:200px;
+}
+
+#ordersView{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);	
+}
+
+input{
+	outline:0;
+	border:0;
+}
+
+.subject{
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:100px;
+}
+
+span{
+	padding-bottom:10px;
+	border-bottom:2px solid lightgrey;
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+    margin-bottom:100px;
+}
+
+td{
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	margin:0;
+	padding:10px 10px;
+	
+}
+
+.colspan{
+	border:0;
+}
+
+.productImg img{
+	width: 95px;
+	height:95px;
+}
+
+#productImg, #productPrice, #productAmount, #sum{
+	width:150px;
+}
+
+#productName{
+	width:600px;
+}
+
+.paging{
+	text-align:center;
+	font-size:0.9em;
+}
+
+.left{
+	text-align:left;
+}
+
+.total, totalsum{
+	font-weight:bold;
+	font-size:1.0em;
+	border:0;
+	text-align:right;
+}
+
+.btn{
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:5px 20px;
+	margin: 20px 10px;
+}
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}
+.largeBtn{
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:5px 20px;
+	color:lightgrey;
+	margin: 10px;
+	text-align:center;
+}
+
+.largeBtn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}
+
+
+#pPrice, #cTotsum{
+	outline:0;
+	border:0;
+}
+
+#pAmount{
+	width:30px;
+}
+
+#ordersInfo{
+	width:100%;
+}
+
+.title{
+	border-right:1px solid lightgrey;
+}
+
+.subtitle{
+	border-right:1px solid lightgrey;
+}
+
+.content{
+	text-align:left;
+}
+
+.content input{
+	width:100%;
+}
+
+#middleBtn{
+	text-align:right;
+	border:0;
+}
+
+#payment, #finalCheck{
+	width:1200px;
+}
+
+#payment td{
+	padding: 30px 0;
+}
+
+#finalCheck{
+	padding: 30px 0;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+.tdBtn{
+	border:0;
+}
+

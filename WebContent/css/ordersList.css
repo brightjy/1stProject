@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+#ordersList_wrap{
+	height:1500px;
+	position:relative;
+	top:200px;
+}
+
+#ordersList{
+	position:absolute;
+	width:1200px;
+	left:50%;
+	top:0px;
+	transform:translate(-50%, 0px);	
+
+}
+
+input{
+	outline:0;
+	border:0;
+}
+
+.subject{
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:100px;
+}
+
+span{
+	padding-bottom:10px;
+	border-bottom:2px solid lightgrey;
+}
+
+table{
+	border-spacing:0;
+    border-collapse: collapse;
+    margin-bottom:100px;
+    width:1200px;
+}
+
+td{
+	font-size: 0.8em;
+ 	border-top:1px solid lightgrey;
+	padding: 10px;
+	text-align:center;
+}
+
+#img{
+	width:100px;
+	heigth:100px;
+}
+
+img{
+	width:100px;
+	heitght:100px;
+}
+
+.btn{
+	width:100px;
+	outline:0;
+	background-color:white;
+	font-size:0.9em;
+	border:1px solid lightgrey;
+	padding:5px 20px;
+	margin: 5px;
+}
+
+.btn:hover{
+	border:1px solid black;
+	cursor: pointer;
+	color:black;
+}
+
+.paging{
+	text-align:center;
+	font-size:0.9em;
+}
+
+.left{
+	text-align:left;
+}
+
+#oDate, #oId, #img, #pPrice, #pAmount, #odTotsum, #reviewWrite{
+	width:100px;
+}
+
+.oInvoice{
+	border-bottom:1px solid lightgrey;
+	margin:0;
+}
