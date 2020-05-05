@@ -4,6 +4,8 @@
 
 기간 : 2020.03.10 ~ 2020.03.20
 
+시연 영상 : https://youtu.be/Ca10_JjJOM0
+
 DBMS : Oracle 11g Express Edition
 
 Language : Java Platform 8, JSP & Servlet
